@@ -1,8 +1,8 @@
 import { MemoryRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import OpenCircuitTest from './components/open-circuit';
-import ShortCircuitTest from './components/closed-circuit';
-import Navbar from './components/header';
+import ShortCircuitTest from './components/short-circuit';
+import Navbar from './components/navbar';
 
 function Hello() {
   return (
