@@ -8,7 +8,17 @@ function Hello() {
   return (
     <div>
       <h1>Welcome to the Open Circuit & Short Circuit Calculator</h1>
-      <h4>{"This Simple Application allows you to conviniently calculate the outcomes of open circuit and closed circuit test utilizing the readings. This Project is made by Prateek Shrivastava(192007), Shivam Sagar(192009), Kushal Suri(192005), Dhruv Aggarwal(192073), Ritika Lohia(192063)"}</h4>
+      <div className="home-text">
+        <p>This Simple Application allows you to conviniently calculate the outcomes of open circuit and closed circuit test utilizing the readings. This Project is made by</p>
+          <ul className="name-list">
+            <li>{"Prateek Srivastava (192007)"}</li>
+            <li>{"Shivam Sagar (192009)"}</li>
+            <li>{"Kushal Suri (192005)"}</li>
+            <li>{"Dhruv Aggarwal (192073)"}</li>
+            <li>{"Ritika Lohia (192042)"}</li>
+          </ul>
+      </div>
+      
     </div>
   );
 }

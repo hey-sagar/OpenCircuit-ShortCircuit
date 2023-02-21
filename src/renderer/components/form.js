@@ -31,19 +31,25 @@ const FormTemplate = ({test, testType}) => {
     return (
         <div>
             <form onSubmit={(e)=>{handleSubmit(e);}}>
+                
                 <h1>{test + "!"}</h1>
+                <div className="readings">
+                <label>{"Voltmeter Reading (volts)"} </label>
+                    <input type="text" value = {volt} required onChange={(e) => {setVolt(e.target.value)}}></input>
+                </div>
+                <div className="readings">
+                    <label>{"Ammeter Reading (ampere)"} </label>
+                    <input type="text" value = {curr} required onChange={(e) => {setCurr(e.target.value)}}></input>
+                </div>
+                <div className="readings">
+                    <label>{"Wattmeter Reading (watts)"} </label>
+                    <input type="text" value = {watt} required onChange={(e) => {setWatt(e.target.value)}}></input><br />
+                </div>
 
-                <label>Voltmeter Reading </label>
-                <input type="text" value = {volt} required onChange={(e) => {setVolt(e.target.value)}}></input><br />
-
-                <label>Ammeter Reading </label>
-                <input type="text" value = {curr} required onChange={(e) => {setCurr(e.target.value)}}></input><br />
-
-                <label>Wattmeter Reading </label>
-                <input type="text" value = {watt} required onChange={(e) => {setWatt(e.target.value)}}></input><br />
-
-                <input type="button" onClick={(e)=>{handleReset(e);}} value = "RESET" className="button"></input>
-                <input type="submit" value = "Submit" className="button"></input>
+                <div className="button-box">
+                    <input type="button" onClick={(e)=>{handleReset(e);}} value = "RESET" className="button"></input>
+                    <input type="submit" value = "Submit" className="button"></input>
+                </div>
 
                  <div className="solutionBox">
                     <h2>{answer}</h2>

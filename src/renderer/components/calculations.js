@@ -7,7 +7,7 @@ const OpenCircuitSolution = (v, i, p)=>{
     const Rc = (v1*v1)/p1;
     const phi = acos(p1/(v1*i1));
     const Xm = Rc/tan(phi);
-    return "Value of Rc is " + Rc + " & Value of Xm is " + Xm;
+    return "Value of Rc is " + Rc.toFixed(2) + " ohms & Value of Xm is " + Xm.toFixed(2) + " ohms.";
 }
 
 const ShortCircuitSolution = (v, i, p)=>{
@@ -17,7 +17,7 @@ const ShortCircuitSolution = (v, i, p)=>{
     const Ro1 = p1/(i1*i1);
     const Zo1 = v1/i1;
     const Xo1 = sqrt(Zo1*Zo1-Ro1*Ro1);
-    return "Value of Ro1 is " + Ro1 + " & Value of Xo1 is " + Xo1;
+    return "Value of Ro1 is " + Ro1.toFixed(2) + " ohms & Value of Xo1 is " + Xo1.toFixed(2) + " ohms.";
 }
 
 export {OpenCircuitSolution, ShortCircuitSolution};
