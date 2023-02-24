@@ -9,7 +9,7 @@ function Hello() {
     <div>
       <h1>Welcome to the Open Circuit & Short Circuit Calculator</h1>
       <div className="home-text">
-        <p>This Simple Application allows you to conviniently calculate the outcomes of open circuit and closed circuit test utilizing the readings. This Project is made by</p>
+        <p>This Simple Application allows you to conviniently calculate the outcomes of open circuit and closed circuit test of a 11kV/415V, 2500 kVA Transformer utilizing the readings. This Project is made by</p>
           <ul className="name-list">
             <li>{"Prateek Srivastava (192007)"}</li>
             <li>{"Shivam Sagar (192009)"}</li>
